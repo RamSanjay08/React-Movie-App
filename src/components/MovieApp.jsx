@@ -47,7 +47,7 @@ function MovieApp() {
   return (
     <section>
       <div className={MovieStyles.inputContainer}>
-        <form onSubmit={onSearch}>
+        <form onSubmit={onSearch} name='movieApp'>
           <input type="text" placeholder={empField || "Search Movie"} onChange={getInputData} value={users}/>
         </form>
           <button onClick={searchInput}>Search</button>
