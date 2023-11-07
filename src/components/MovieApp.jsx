@@ -6,6 +6,7 @@ function MovieApp() {
   let [users,setusers] = useState("")
   let [display,setDisplay] = useState([])
   let [empField,setEmpField] = useState(false)
+  let [isloading,setIsLoading] = useState(false)
 
   useEffect(()=> {
     getMovies()
@@ -61,6 +62,7 @@ function MovieApp() {
           <h4>{vote_average}</h4>
           </div>
         </div>
+        
       })}
     </div>
     <footer>

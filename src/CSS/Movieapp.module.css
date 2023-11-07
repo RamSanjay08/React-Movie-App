@@ -57,7 +57,6 @@ html,body {
   border-radius: .5rem;
   transition: all .3s ease-in-out;
   transform: scale(.95);
-  /* border: solid 2px red;  */
   /* overflow: hidden; */
 }
 
