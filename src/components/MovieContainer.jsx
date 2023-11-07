@@ -1,5 +1,6 @@
 import React from 'react'
 import MovieStyles from '../CSS/Movieapp.module.css'
+import Loading from './Loading'
 
 function MovieContainer({
   display,
@@ -27,7 +28,7 @@ function MovieContainer({
 
   return (
     <section>
-      <h1>{isLoading && "Loading"}</h1>
+      <h1>{isLoading && <Loading />}</h1>
       <h1>{isError && "error"}</h1>
     <div className={MovieStyles.inputContainer}>
       <form onSubmit={onSearch} name='movieApp'>
