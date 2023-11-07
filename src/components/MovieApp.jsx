@@ -62,7 +62,6 @@ function MovieApp() {
           <h4>{vote_average}</h4>
           </div>
         </div>
-        
       })}
     </div>
     <footer>
