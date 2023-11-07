@@ -72,7 +72,7 @@ body {
 }
 
 .cards:hover {
-  transform: scale(1.05,1.00)
+  transform: scale(1.03,1.00)
 }
 
 .cards div img {
@@ -88,33 +88,36 @@ body {
 
 .cardContent h2 {
   font-size: 1rem;
-  width: 80%;
+  width: 75%;
   /* white-space: nowrap; */
 }
 
 .cardContent h4 {
   font-size: 1rem;
-  background-color: green;
   padding: .5rem;
   border-radius: .3rem;
 }
 
-footer {
-  margin-top: 1rem;
-  background-color: rgb(32, 30, 30);
-  padding-block: 1rem;
-  font-size: 1.2rem;
-  text-align: center;
-  display: block;
-  color: #FFFBF5;
+.greenColor {
+  background-color: #57E32C;
+}
+
+.redColor {
+  background-color: #ff4545;
+}
+
+.cardContent i {
+  font-size: .9rem;
+  color: #ffe234;
+  padding-left: .2rem;
 }
 
 .pagination {
   display: flex;
   gap: 1rem;
+  padding-block: .6rem 1rem;
   justify-content: center;
 }
-
 
 .pagination button{
   padding: .9rem 1.1rem;
@@ -123,6 +126,15 @@ footer {
   border-radius: .3rem;
   color: #FFFBF5;
   background-color: dodgerblue;
+}
+
+footer {
+  background-color: rgb(32, 30, 30);
+  padding-block: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  display: block;
+  color: #FFFBF5;
 }
 
 @media (max-width:800px){
