@@ -1,6 +1,8 @@
 import React , { useEffect, useState } from 'react'
 import axios from 'axios'
 import MovieContainer from './MovieContainer'
+import Ina from "../assests/not available.jpg"
+import Loading from './Loading'
 
 function MovieApp(props) {
 
@@ -62,9 +64,9 @@ function MovieApp(props) {
 
   //^ Default Values
   const defaultValues = {
-    // defaultImage: "/public/assests/not available.jpg"
+    defaultImage: {Ina},
     defaultRating: "N/A",
-    defaultImage: "https://st3.depositphotos.com/32990740/35467/v/450/depositphotos_354674378-stock-illustration-isolated-picture-flat-style-icon.jpg"
+    // defaultImage: "https://st3.depositphotos.com/32990740/35467/v/450/depositphotos_354674378-stock-illustration-isolated-picture-flat-style-icon.jpg"
   }
 
   //^ Page Handling
