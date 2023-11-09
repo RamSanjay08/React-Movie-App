@@ -29,7 +29,7 @@ function MovieContainer({
   return (
     <section>
       <h1>{isLoading && <Loading />}</h1>
-      <h1>{isError && "error"}</h1>
+      <h1>{isError && "Error"}</h1>
     <div className={MovieStyles.inputContainer}>
       <form onSubmit={onSearch} name='movieApp'>
         <input type="text" placeholder={empField || "Search Movie"} onChange={getInputData} value={users}/>
