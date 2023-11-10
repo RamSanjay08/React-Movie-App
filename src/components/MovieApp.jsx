@@ -18,6 +18,7 @@ function MovieApp(props) {
   //^ useEffect
   useEffect(()=> {
     getMovies(pageNumber)
+    
   },[pageNumber])
 
   const apiSearch = `https://api.themoviedb.org/3/search/movie?query=${users}&api_key=d20f3d07e092055066c6afc65a641a4a`
@@ -38,7 +39,7 @@ function MovieApp(props) {
       setIsLoading(false)
     }
   }
-
+ 
   //^ Input Api
   async function searchInput(){
     if(users.trim() === "") {
@@ -73,7 +74,7 @@ function MovieApp(props) {
   const handlePageChange = (newPage) => {
     setPageNumber(newPage)
   }
-
+  
   return (
     <MovieContainer
     display={display}

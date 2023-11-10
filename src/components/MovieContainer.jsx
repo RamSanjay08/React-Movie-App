@@ -11,12 +11,13 @@ function MovieContainer({
   defaultValues,
   imageURL,
   pageNumber,
-  isLoading,
+  isloading,
   isError,
   totalPages,
   searchInput,
   handlePageChange,
 }) {
+  
 
   const getRatingColorClass = (rating) => {
     if(rating >= 7) {
@@ -25,10 +26,10 @@ function MovieContainer({
       return MovieStyles.redColor
     }
   }
-
+  console.log(isloading);
+  
   return (
     <section>
-      <h1>{isLoading && <Loading />}</h1>
       <h1>{isError && "Error"}</h1>
     <div className={MovieStyles.inputContainer}>
       <form onSubmit={onSearch} name='movieApp'>
@@ -36,6 +37,8 @@ function MovieContainer({
       </form>
         <button onClick={searchInput}>Search</button>
     </div>
+    {isloading && <Loading/>}
+   
   <div className={MovieStyles.cardContainer}>
     {display.map(({id,poster_path,title,vote_average,overview}) => {
       const ratingColorClass = getRatingColorClass(vote_average)

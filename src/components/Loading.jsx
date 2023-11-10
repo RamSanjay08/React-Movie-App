@@ -1,8 +1,9 @@
 import React from 'react'
+import style from '../CSS/Loading.module.css'
 
 function Loading() {
   return (
-      <span class="loader"></span>
+      <span className={style.loader}></span>
   )
 }
 

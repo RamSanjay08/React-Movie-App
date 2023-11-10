@@ -5,10 +5,11 @@
   position: relative;
   border-width: 3px 2px 3px 2px;
   border-style: solid dotted solid dotted;
-  border-color: #de3500 rgba(255, 255, 255,0.3) #fff rgba(151, 107, 93, 0.3);
+  border-color: #de3500 rgba(255, 255, 255,0.3) #100101 rgba(151, 107, 93, 0.3);
   border-radius: 50%;
   box-sizing: border-box;
   animation: 1s rotate linear infinite;
+  margin: 300px 750px;
 }
 .loader:before , .loader:after{
   content: '';
@@ -16,7 +17,7 @@
   left: 0;
   position: absolute;
   border: 10px solid transparent;
-  border-bottom-color:#fff;
+  border-bottom-color:#140404;
   transform: translate(-10px, 19px) rotate(-35deg);
 }
 .loader:after {
