@@ -63,6 +63,7 @@ function MovieContainer({
   </section>
   )
 }
+``
 
 export default MovieContainer
 
